@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url(reset.css);
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 14px;
+  font-family: "Microsoft YaHei";
+  position: relative; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  background: #F7F7F7; }
+  .header .cancel {
+    font-size: 12px;
+    position: absolute;
+    left: 5%; }
+
+.main {
+  -webkit-flex: 1;
+  overflow: scroll;
+  position: relative;
+  background: #F3F4F6; }
+  .main .main_detail {
+    background: #F3F4F6; }
+  .main .bloc_k {
+    margin: 0.04rem 0; }
+  .main .state {
+    width: 100%;
+    background: #fff; }
+    .main .state ul li {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      border-bottom: 1px solid #ccc;
+      padding: 0 5%; }
+      .main .state ul li span {
+        float: right;
+        position: relative;
+        top: 50%;
+        margin-top: -12px; }
+  .main .address {
+    width: 100%;
+    height: 1.29rem;
+    background: #fff;
+    position: relative; }
+    .main .address dl {
+      width: 90%;
+      margin: 0 5%; }
+    .main .address p {
+      width: 90%;
+      padding: 0.18rem 5%; }
+    .main .address dl {
+      display: -webkit-flex;
+      -webkit-flex-direction: row; }
+      .main .address dl dt {
+        margin-right: 0.1rem;
+        width: 0.25rem; }
+      .main .address dl dd {
+        -webkit-flex: 1; }
+        .main .address dl dd .phone {
+          float: right; }
+    .main .address:after {
+      content: "";
+      width: 100%;
+      height: 0.15rem;
+      background: url(../images/address_border.jpg) no-repeat;
+      background-size: container;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .main .address:before {
+      content: "";
+      width: 100%;
+      height: 0.15rem;
+      background: url(../images/address_border.jpg) no-repeat;
+      background-size: container;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .main .pro_box {
+    background: #fff;
+    width: 100%;
+    border-top: 1px solid #ccc; }
+    .main .pro_box h2 {
+      width: 100%;
+      height: 0.48rem;
+      line-height: 0.48rem;
+      border-bottom: 1px solid #ccc;
+      padding-left: 5%; }
+    .main .pro_box .prolist {
+      width: 100%;
+      border-bottom: 1px solid #ccc; }
+      .main .pro_box .prolist dl {
+        margin: 0 5%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        width: 90%;
+        display: -webkit-flex;
+        -webkit-flex-direction: row;
+        border-bottom: 1px solid #ccc; }
+        .main .pro_box .prolist dl dt {
+          width: 0.725rem;
+          padding-right: 0.1rem;
+          position: relative; }
+          .main .pro_box .prolist dl dt img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0.1rem;
+            bottom: 0.1rem; }
+        .main .pro_box .prolist dl dd {
+          -webkit-flex: 1; }
+          .main .pro_box .prolist dl dd ul {
+            padding: 5% 0; }
+          .main .pro_box .prolist dl dd li:nth-of-type(1) {
+            font-size: 16px;
+            color: #000; }
+          .main .pro_box .prolist dl dd li:nth-of-type(2) {
+            color: #979797; }
+            .main .pro_box .prolist dl dd li:nth-of-type(2) small {
+              float: right;
+              zoom: 0.6; }
+          .main .pro_box .prolist dl dd li:nth-of-type(3) {
+            color: #AF4D64; }
+      .main .pro_box .prolist p {
+        padding: 0 5%;
+        height: 0.3rem;
+        line-height: 0.3rem; }
+  .main .count {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ccc; }
+    .main .count ul {
+      width: 100%;
+      padding: 0 5%;
+      border-bottom: 1px solid #ccc; }
+      .main .count ul li {
+        line-height: 0.3rem; }
+        .main .count ul li span:nth-of-type(1) {
+          display: inline-block;
+          width: 0.6rem; }
+          .main .count ul li span:nth-of-type(1) a {
+            visibility: hidden; }
+        .main .count ul li .free {
+          color: #AF4D64;
+          float: right; }
+          .main .count ul li .free a {
+            color: #AF4D64; }
+    .main .count p {
+      width: 100%;
+      padding: 0 5%;
+      height: 0.55rem;
+      line-height: 0.55rem;
+      text-align: right; }
+      .main .count p span {
+        color: #AF4D64; }
+        .main .count p span a {
+          color: #AF4D64; }
+  .main .pay ul li {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    position: relative; }
+    .main .pay ul li number {
+      color: #000;
+      font-weight: 900;
+      padding-left: 0.2rem; }
+    .main .pay ul li p {
+      display: inline-block;
+      width: 0.8rem;
+      -webkit-flex: 1;
+      position: relative; }
+      .main .pay ul li p label {
+        overflow: hidden;
+        display: inline-block;
+        width: 0.6rem;
+        height: 0.33rem;
+        border-radius: 100px;
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        margin-top: -0.1515rem;
+        background: #4BD661; }
+        .main .pay ul li p label time {
+          content: "";
+          background: #fff;
+          width: 0.33rem;
+          height: 0.33rem;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          position: absolute;
+          top: -1px;
+          right: -1px; }
+    .main .pay ul li a {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      margin-top: -0.25rem; }
+    .main .pay ul li:nth-of-type(3) {
+      display: none; }
+      .main .pay ul li:nth-of-type(3) input {
+        border: none;
+        outline: none;
+        padding-left: 0.1rem; }
+  .main .tip {
+    -webkit-transform: scale(0.8);
+    text-align: center;
+    color: #9FA0A2; }
+
+.footer {
+  width: 100%;
+  height: 0.6rem;
+  text-align: center;
+  line-height: 0.6rem;
+  color: #fff;
+  background: #E11B3C; }
+
+/*# sourceMappingURL=dingdanxiangqing.css.map */

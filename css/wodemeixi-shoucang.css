@@ -1,0 +1,159 @@
+@import url(index.css);
+input, select, textarea, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+html {
+  font-size: 100px; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  left: 100%; }
+
+.header {
+  width: 100%;
+  height: 0.45rem;
+  background: #f6f6f7;
+  position: relative;
+  line-height: 0.45rem;
+  text-align: center; }
+  .header a {
+    position: absolute;
+    width: 0.21rem;
+    height: 0.18rem; }
+    .header a:nth-child(1) {
+      width: 0.21rem;
+      height: 0.18rem;
+      background-image: url("../images/backBtn.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      top: 50%;
+      margin-top: -0.09rem;
+      left: 0.17rem; }
+    .header a:nth-child(3) {
+      width: 0.28rem;
+      height: 0.14rem;
+      top: 3%;
+      font-size: 0.14rem;
+      left: 86%; }
+  .header h4 {
+    width: 100%;
+    line-height: 0.45rem;
+    font-size: 0.15rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -o-flex-grow: 1; }
+
+.list {
+  width: 100%; }
+
+.list_item {
+  width: 100%;
+  height: 1.04rem;
+  border-bottom: 1px solid #c8c7cc;
+  display: -webkit-box; }
+
+.list a {
+  display: block;
+  width: 100%; }
+
+.list dl {
+  width: 100%;
+  display: -webkit-box;
+  padding-top: 0.14rem;
+  padding-bottom: 0.17rem; }
+
+.list dl dt {
+  padding-left: 0.2rem; }
+
+.list dl dd {
+  padding-left: 0.18rem; }
+
+.list dl dt img {
+  width: 0.47rem;
+  height: 0.67rem; }
+
+.list dl dd span {
+  display: block;
+  color: #9b9b9b;
+  font-size: 12px; }
+
+.list dl dd small {
+  color: #c11a21;
+  font-size: 12px;
+  line-height: 0.3rem; }
+
+.callect {
+  width: 18%;
+  background: #808080;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem; }
+
+.remove {
+  width: 18%;
+  background: #e8203c;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem; }
+
+.list_item .radio {
+  position: relative !important;
+  width: 13%;
+  height: 1.04rem;
+  display: none; }
+
+.list_item .radio p {
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -0.1rem; }
+
+.list_item .radio label {
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  left: 0;
+  top: 0; }
+
+.list_item .radio p.on label {
+  background: url("../images/wodemeixi-collect.png");
+  background-size: 100% 100%; }
+
+.list_item input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  opacity: 0; }
+
+/*# sourceMappingURL=wodemeixi-shoucang.css.map */

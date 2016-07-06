@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+html{
+	font-size: 100px;
+}
+#warp{
+	width: 100%;
+	height: 100%
+}
+.imgs{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.pics{
+	display: -webkit-box;
+}
+.pics li:nth-child(2){
+	position: relative;
+}
+a.share{
+	position: absolute;
+	width:37%;
+	height:0.3rem;
+	background: #e01b3c;
+	color: #fff;
+	text-align: center;
+	line-height: 0.3rem;
+	left:50%;
+	bottom:10%;
+	margin-left: -16%;
+	z-index: 10000;
+}
+.friend{
+	position: absolute;
+}
+.pics img{
+	width:100%;
+	height:auto;
+}

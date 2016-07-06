@@ -1,0 +1,156 @@
+@import url(index.css);
+input, select, textarea, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+html {
+  font-size: 100px; }
+
+html, body, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -o-flex-direction: column;
+  position: relative;
+  overflow: hidden; }
+
+.header {
+  width: 100%;
+  height: 0.45rem;
+  background: #f6f6f7;
+  position: relative;
+  line-height: 0.45rem; }
+  .header a {
+    position: absolute;
+    width: 0.21rem;
+    height: 0.18rem; }
+    .header a:nth-child(3) {
+      width: 0.21rem;
+      height: 0.18rem;
+      background-image: url("../images/-0.09rem");
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      top: 50%;
+      margin-top: -16px;
+      left: 0.17rem; }
+    .header a:nth-child(3) {
+      width: 0.21rem;
+      height: 0.18rem;
+      background-image: url("../images/2faxianfirstdianji_03.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      top: 50%;
+      margin-top: -0.09rem;
+      left: 90%;
+      z-index: 12; }
+  .header h4 {
+    width: 60%;
+    line-height: 0.45rem;
+    font-size: 0.15rem;
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -moz-flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -o-flex-direction: row; }
+    .header h4 span {
+      display: block;
+      width: 50%;
+      text-align: center;
+      line-height: 0.45rem; }
+
+.footer {
+  width: 100%;
+  height: 0.5rem;
+  background: #e2e2e3;
+  text-align: center; }
+  .footer a {
+    display: block;
+    width: 20%;
+    height: 0.45rem;
+    float: left; }
+  .footer dl dt {
+    padding-top: 0.05rem; }
+    .footer dl dt img {
+      width: 0.2rem;
+      height: 0.2rem; }
+  .footer dl dd {
+    color: #909090;
+    font-size: 0.11rem; }
+
+.bgred {
+  color: #e82843; }
+
+.main {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -o-flex-grow: 1;
+  overflow: hidden;
+  width: 100%;
+  position: relative; }
+  .main a {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-top: none; }
+    .main a dl dt {
+      padding: 0.1rem; }
+      .main a dl dt img {
+        width: auto;
+        height: 0.72rem; }
+    .main a dl dd p {
+      line-height: 20px;
+      font-size: 0.15rem; }
+
+.left {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #ccc; }
+  .left .pp {
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc; }
+
+.right {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-left: none; }
+
+.contain {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -o-flex;
+  display: -moz-flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row; }
+
+/*# sourceMappingURL=2faxian-tuijian.css.map */
